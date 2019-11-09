@@ -1,0 +1,41 @@
+{% extends 'index.html'%}
+{% block content%}
+<fieldset>
+    <form method="POST" action="register" name="login_form"> {%csrf_token%}
+
+    <table align="center" cellpadding = "10">
+        <tr>
+
+            <td><h3 style="align:center;">Please provide your login credentials</h3></td>
+        </tr>
+    </table>
+
+    <table align="center" cellpadding = "10">
+
+        <!----- First Name ---------------------------------------------------------->
+
+
+        <tr>
+
+            <td>User Name</td>
+            <td><input type="email" name="First_Name" maxlength="30" required/>
+
+            </td>
+        </tr>
+
+        <!----- Last Name ---------------------------------------------------------->
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Last_Name" maxlength="30" required/>
+            </td>
+        </tr>
+        <!----- Last Name ---------------------------------------------------------->
+         <tr>
+             <td></td>
+        <td><input type="submit" value="Login" name="login" maxlength="30"/></td>
+        </tr>
+    </table>
+    </form>
+</fieldset>
+
+{%endblock%}

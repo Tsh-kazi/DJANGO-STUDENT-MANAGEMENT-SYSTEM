@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en US">
+<head>
+	<title>Login page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+	<script>
+		function validateForm() {
+	    	var x = document.forms["loginForm"]["UserName"].value;
+	    	var y = document.forms["loginForm"]["password"].value;
+	    	if (x == "" || y == ""){
+	        	alert("All fields are required");
+	        	return false;
+	    	}
+		}
+	</script>
+	
+</head>
+<body>
+	<h1>Leadership Academy of South Sudan</h1>
+	<hr>
+	<div id="MainFrame">
+		<fieldset>
+			<legend>Login Form</legend>
+				<form name = "loginForm" method="POST" onsubmit="return validateForm()" action="panel.html">
+					<div id="userId">
+						<label>User Name: </label>
+						<input type="email" name="UserName" placeholder="Enter your Email Id" ><br>
+					</div>
+
+					<div id = "UserPassword">
+						<label>Password:</label>
+						<input type="password" name="password" placeholder="Enter your Password"><br>
+					</div>
+					<div id="signIN">
+						<input type="submit" name="Login" value="Sign In">
+					</div>			
+				</form>
+
+			
+				<div id="signUp">
+					<form method = "POST" action="registration.html">
+						<input type="submit" name="SignUp" value="Sign Up">
+					</form>
+
+					
+				</div>
+				
+				<div id = "Forgot_password"> 
+					<form method="post" action="recover.html">
+						<input type="submit" name="fPASSWORD" value="Forgot Password">
+					</form>
+					
+				</div>
+				
+					
+		</fieldset>
+		
+	</div>
+</body>
+</html>

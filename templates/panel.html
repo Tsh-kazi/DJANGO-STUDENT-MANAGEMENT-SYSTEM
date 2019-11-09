@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+
+
+
+{% block content %}
+	<style>
+
+	#PanelLefbar{
+		width: 20%;
+		float: left;
+	}
+
+	#PanelContent{
+		width: 90%;
+		float: left;
+
+	}
+	#PanelRightbar{
+		width: 20%;
+		float: left;
+
+	}
+	button{
+		width: 250px;
+		height: 75px;
+		background-color: #45a049;
+		color: white;
+		border-radius: 6px;
+	}
+	</style>
+<fieldset>
+
+	<center>
+
+		<div id = PanelLefbar>
+			<button>Student Profiles</button><br><br>
+			<button>Voting Booth</button><br><br>
+			<button>Candidates</button><br><br>
+			<button>View Result</button><br><br>
+
+		</div>
+		<div id = PanelContent>
+
+			<p>Welcome To This System: </p> {{ request.session.username }}
+		</div>
+		
+	</center>
+</fieldset>
+
+{% endblock%}

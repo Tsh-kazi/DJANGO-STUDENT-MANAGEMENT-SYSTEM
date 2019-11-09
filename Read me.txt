@@ -1,0 +1,7 @@
+------------------------- Site Administartion Documentation ------------------------------------
+Site Super Admin: UserName: gammarays Password: Sudan2019 Email: angelgammarays@gmail.com
+Site Admin: UserName: admin Paassword: Sudan2019 Email: openvisiongate@gmail.com
+G Site Admin : gammarays Password:!@#$%Sudan2019
+-----------------------System Administration Documentation ------------------------------------
+
+
